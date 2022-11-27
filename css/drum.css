@@ -1,0 +1,28 @@
+.drumContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:pink;
+}
+.drumBtn{
+   
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color:#fff;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: capitalize;
+    min-width: 200px;
+    min-height: 200px;
+}
+.drumBtn:active{
+    box-shadow: none;
+    background-size: 104%;
+}

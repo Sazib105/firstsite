@@ -1,0 +1,34 @@
+
+.slideContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.slider{
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.imageContainer{
+   display: flex;
+}
+
+.btn{
+    position: absolute;
+    color:#ffff;
+}
+
+.prev{
+    left:5px;
+    top:50%;
+}
+.next{
+    right:5px;
+    top:50%;
+    
+}

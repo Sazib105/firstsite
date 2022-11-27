@@ -1,0 +1,54 @@
+
+.darkContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.darkInput{
+    visibility: hidden;
+    /* z-index: 1; */
+}
+.darkLabel{
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.darkCircle{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: white;
+    animation: darkToggleOff 0.4s linear forwards;
+}
+
+.darkInput:checked + .darkLabel{
+    background-color: salmon;
+}
+.darkInput:checked + .darkLabel .darkCircle{
+    animation: darkToggleOn 0.4s linear forwards;
+}
+@keyframes darkToggleOn{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(40px);
+    }
+}
+@keyframes darkToggleOff{
+    0%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
